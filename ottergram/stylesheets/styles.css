@@ -37,6 +37,8 @@ a {
 .thumbnail-list {
   list-style: none;
   padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .thumbnail-item + .thumbnail-item {
@@ -46,10 +48,15 @@ a {
 .thumbnail-item {
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
-  display: block;
+  display: inline-block;
+  width: 120px;
 }
 
 .thumbnail-image {
   display: block;
   width: 100%;
+}
+
+.detail-image {
+  width: 90%;
 }
