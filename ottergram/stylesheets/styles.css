@@ -8,8 +8,15 @@
     url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
     url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
 }
+
+html, body {
+  height: 100%;
+}
+
 body {
   background: rgb(149, 194, 215);
+  display: flex;
+  flex-direction: column;
   font-size: 10px;
 }
 
@@ -36,9 +43,9 @@ a {
 
 .thumbnail-list {
   list-style: none;
+  overflow-x: auto;
   padding: 0;
   white-space: nowrap;
-  overflow-x: auto;
 }
 
 .thumbnail-item + .thumbnail-item {
